@@ -49,7 +49,7 @@ class HtmlProductWriter extends ShopProductWriter
             '<br />'
             .$cdtable.
             '<br />'
-            .$gametable .
+            .$gametable.
             '<br />'
             .$addProduct .
             '</body>';
@@ -124,7 +124,7 @@ private function generateGameTable($gameproducts)
             $contents .= '<tr>
                   <td>'.$game->getFullName().'</td>'
                 .'<td>'.$game->getTitle().'</td>'
-                .'<td>'.$game->getgameRating().'</td>'
+                .'<td>'.$game->getNumberofgameRating().'</td>'
                 .'<td>'.$game->getPrice().'</td>'
                 .'<td>'.'<a href="./index.php?delete='.$game->getId().'">X</a>'.'</td>
                 </tr>';
@@ -161,10 +161,10 @@ private function generateGameTable($gameproducts)
           </select> 
           <br />
           <br />
-         <label for="name">Author / Artist /Console: </label><br />
+         <label for="name">Author / Artist / Console: </label><br />
          <label for="fname">First Name:</label>
            <input type="text" id="fname" name="fname"><br />
-          <label for="sname">Main Name / Surname/ Console:</label>
+          <label for="sname">Main Name / Surname / Console:</label>
            <input type="text" id="sname" name="sname">
            <br />
            <br />
